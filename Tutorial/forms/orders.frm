@@ -8,15 +8,112 @@
     "items":[
         {
             "anchors":3,
-            "cssPosition":"187,-1,-1,calc(25% + 176px),180,20",
+            "cssPosition":"115,-1,-1,calc( 25% + 200px),179,30",
+            "json":{
+                "anchors":3,
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"30",
+                    "left":"calc( 25% + 200px)",
+                    "right":"-1",
+                    "top":"115",
+                    "width":"179"
+                },
+                "dataProviderID":"shipaddress",
+                "location":{
+                    "x":319,
+                    "y":135
+                },
+                "size":{
+                    "height":30,
+                    "width":179
+                },
+                "styleClass":"default-align",
+                "valuelistID":"3076081B-2B1B-458B-9587-0F0332624E4C"
+            },
+            "location":"319,135",
+            "name":"typeahead_1_copy14",
+            "size":"179,30",
+            "styleClass":"default-align",
+            "typeName":"bootstrapcomponents-typeahead",
+            "typeid":47,
+            "uuid":"00799E1E-FCA0-4E97-901C-2C48E675308C"
+        },
+        {
+            "anchors":3,
+            "cssPosition":"270,246,-1,-1,80,30",
+            "json":{
+                "anchors":3,
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"30",
+                    "left":"-1",
+                    "right":"246",
+                    "top":"270",
+                    "width":"80"
+                },
+                "location":{
+                    "x":319,
+                    "y":170
+                },
+                "size":{
+                    "height":20,
+                    "width":180
+                },
+                "styleClassExpression":null,
+                "text":"Order Total",
+                "toolTipText":"Employeeid"
+            },
+            "location":"319,170",
+            "name":"label_588_copy317_copy406_copy340",
+            "size":"180,20",
+            "typeName":"bootstrapcomponents-label",
+            "typeid":47,
+            "uuid":"13481FB8-3ECA-4A42-8291-4C07684A9191"
+        },
+        {
+            "anchors":3,
+            "cssPosition":"90,-1,-1,calc( 25% + 200px),180,20",
             "json":{
                 "anchors":3,
                 "cssPosition":{
                     "bottom":"-1",
                     "height":"20",
-                    "left":"calc(25% + 176px)",
+                    "left":"calc( 25% + 200px)",
                     "right":"-1",
-                    "top":"187",
+                    "top":"90",
+                    "width":"180"
+                },
+                "location":{
+                    "x":319,
+                    "y":110
+                },
+                "size":{
+                    "height":20,
+                    "width":180
+                },
+                "styleClassExpression":null,
+                "text":"Ship Address",
+                "toolTipText":"Customerid"
+            },
+            "location":"319,110",
+            "name":"label_266_copy682",
+            "size":"180,20",
+            "typeName":"bootstrapcomponents-label",
+            "typeid":47,
+            "uuid":"2B491FA5-45AE-41A1-9BA9-228C6838524F"
+        },
+        {
+            "anchors":3,
+            "cssPosition":"210,-1,-1,calc(25% + 10px),180,20",
+            "json":{
+                "anchors":3,
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"20",
+                    "left":"calc(25% + 10px)",
+                    "right":"-1",
+                    "top":"210",
                     "width":"180"
                 },
                 "location":{
@@ -44,6 +141,7 @@
                 "columns":[
                     {
                         "dataprovider":"productid",
+                        "editType":"TYPEAHEAD",
                         "headerTitle":"Product",
                         "id":"productid",
                         "styleClassDataprovider":null,
@@ -52,6 +150,7 @@
                     },
                     {
                         "dataprovider":"quantity",
+                        "editType":"TEXTFIELD",
                         "headerTitle":"Quantity",
                         "id":"quantity",
                         "maxWidth":150,
@@ -60,6 +159,8 @@
                     },
                     {
                         "dataprovider":"unitprice",
+                        "editType":"TEXTFIELD",
+                        "filterType":null,
                         "format":"¤#.00|#.00",
                         "headerTitle":"UnitPrice",
                         "id":"unitprice",
@@ -85,7 +186,8 @@
                 },
                 "myFoundset":{
                     "foundsetSelector":"orders_to_order_details"
-                }
+                },
+                "onColumnDataChange":"CBCF8530-4ED7-4B8B-8086-E4D068B63C2D"
             },
             "name":"datagrid_1",
             "typeName":"aggrid-groupingtable",
@@ -93,16 +195,35 @@
             "uuid":"3AD0300F-7208-4C80-BD3C-D49175B08BA0"
         },
         {
+            "cssPosition":"45,10,-1,-1,103,30",
+            "json":{
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"30",
+                    "left":"-1",
+                    "right":"10",
+                    "top":"45",
+                    "width":"103"
+                },
+                "onActionMethodID":"FD52D816-1E0D-4239-8AF2-F8E54E80B9C3",
+                "text":"New order"
+            },
+            "name":"button_1",
+            "typeName":"bootstrapcomponents-button",
+            "typeid":47,
+            "uuid":"4682145B-ED45-464C-9B84-3516EDE75CD8"
+        },
+        {
             "anchors":3,
-            "cssPosition":"21,-1,-1,calc(25% + 176px),276,30",
+            "cssPosition":"46,-1,-1,calc(25% + 10px),276,30",
             "json":{
                 "anchors":3,
                 "cssPosition":{
                     "bottom":"-1",
                     "height":"30",
-                    "left":"calc(25% + 176px)",
+                    "left":"calc(25% + 10px)",
                     "right":"-1",
-                    "top":"21",
+                    "top":"46",
                     "width":"276"
                 },
                 "location":{
@@ -125,22 +246,140 @@
             "uuid":"4A8936E5-F523-414E-AB5B-052353255C82"
         },
         {
+            "anchors":3,
+            "cssPosition":"150,-1,-1,calc( 25% + 200px),180,20",
+            "json":{
+                "anchors":3,
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"20",
+                    "left":"calc( 25% + 200px)",
+                    "right":"-1",
+                    "top":"150",
+                    "width":"180"
+                },
+                "location":{
+                    "x":319,
+                    "y":170
+                },
+                "size":{
+                    "height":20,
+                    "width":180
+                },
+                "styleClassExpression":null,
+                "text":"Ship City",
+                "toolTipText":"Employeeid"
+            },
+            "location":"319,170",
+            "name":"label_588_copy317",
+            "size":"180,20",
+            "typeName":"bootstrapcomponents-label",
+            "typeid":47,
+            "uuid":"5934D222-F9BB-468C-96B6-0B3DCC7742EE"
+        },
+        {
+            "anchors":3,
+            "cssPosition":"174,-1,-1,calc( 25% + 200px),179,30",
+            "json":{
+                "anchors":3,
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"30",
+                    "left":"calc( 25% + 200px)",
+                    "right":"-1",
+                    "top":"174",
+                    "width":"179"
+                },
+                "dataProviderID":"shipcity",
+                "location":{
+                    "x":319,
+                    "y":194
+                },
+                "size":{
+                    "height":30,
+                    "width":179
+                },
+                "styleClass":"default-align",
+                "valuelistID":"12062E28-3DEF-4A47-965C-71C7DF53B584"
+            },
+            "location":"319,194",
+            "name":"typeahead_2_copy705",
+            "size":"179,30",
+            "styleClass":"default-align",
+            "typeName":"bootstrapcomponents-typeahead",
+            "typeid":47,
+            "uuid":"5D8E172F-8E77-43D1-A78E-2DC1FA56E95C"
+        },
+        {
+            "anchors":3,
+            "cssPosition":"230,-1,-1,calc( 25% + 200px),179,30",
+            "json":{
+                "anchors":3,
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"30",
+                    "left":"calc( 25% + 200px)",
+                    "right":"-1",
+                    "top":"230",
+                    "width":"179"
+                },
+                "dataProviderID":"shipcountry",
+                "location":{
+                    "x":319,
+                    "y":194
+                },
+                "size":{
+                    "height":30,
+                    "width":179
+                },
+                "styleClass":"default-align",
+                "valuelistID":"12062E28-3DEF-4A47-965C-71C7DF53B584"
+            },
+            "location":"319,194",
+            "name":"typeahead_2_copy705_copy865",
+            "size":"179,30",
+            "styleClass":"default-align",
+            "typeName":"bootstrapcomponents-typeahead",
+            "typeid":47,
+            "uuid":"71756573-BD16-4014-AD87-90983B07EF51"
+        },
+        {
             "height":480,
             "partType":5,
             "typeid":19,
             "uuid":"8015396C-6B9D-4BB2-87FA-E7EE4C671847"
         },
         {
+            "cssPosition":"10,75%,-1,10,140,30",
+            "json":{
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"30",
+                    "left":"10",
+                    "right":"75%",
+                    "top":"10",
+                    "width":"140"
+                },
+                "dataProviderID":"searchText",
+                "onActionMethodID":"B917B183-EF1C-4C78-839D-7BAA03114A94",
+                "placeholderText":"Enter Search Criteria"
+            },
+            "name":"textbox_4",
+            "typeName":"bootstrapcomponents-textbox",
+            "typeid":47,
+            "uuid":"98B5CB54-B0C3-42A2-969F-6661610CA385"
+        },
+        {
             "anchors":3,
-            "cssPosition":"67,-1,-1,calc(25% + 176px),180,20",
+            "cssPosition":"90,-1,-1,calc(25% + 10px),180,20",
             "json":{
                 "anchors":3,
                 "cssPosition":{
                     "bottom":"-1",
                     "height":"20",
-                    "left":"calc(25% + 176px)",
+                    "left":"calc(25% + 10px)",
                     "right":"-1",
-                    "top":"67",
+                    "top":"90",
                     "width":"180"
                 },
                 "location":{
@@ -164,15 +403,15 @@
         },
         {
             "anchors":3,
-            "cssPosition":"151,-1,-1,calc(25% + 176px),179,30",
+            "cssPosition":"174,-1,-1,calc(25% + 10px),179,30",
             "json":{
                 "anchors":3,
                 "cssPosition":{
                     "bottom":"-1",
                     "height":"30",
-                    "left":"calc(25% + 176px)",
+                    "left":"calc(25% + 10px)",
                     "right":"-1",
-                    "top":"151",
+                    "top":"174",
                     "width":"179"
                 },
                 "dataProviderID":"employeeid",
@@ -196,16 +435,82 @@
             "uuid":"A96A3611-FA48-453B-93C7-47E7FB413D76"
         },
         {
+            "cssPosition":"86,-1,-1,calc(25% + 390px),200,170",
+            "json":{
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"170",
+                    "left":"calc(25% + 390px)",
+                    "right":"-1",
+                    "top":"86",
+                    "width":"200"
+                },
+                "foundset":{
+                    "dataproviders":{
+                        "label":"order_details_to_products.productname",
+                        "value":"subtotal"
+                    },
+                    "foundsetSelector":"orders_to_order_details"
+                },
+                "type":"doughnut"
+            },
+            "name":"chart_5",
+            "typeName":"svychartjs-chart",
+            "typeid":47,
+            "uuid":"AC87F049-C5E3-4BC8-BBD7-5AF654FC48EB"
+        },
+        {
+            "cssPosition":"275,101,-1,-1,150,35",
+            "json":{
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"35",
+                    "left":"-1",
+                    "right":"101",
+                    "top":"275",
+                    "width":"150"
+                },
+                "dataProviderID":"order_total",
+                "format":"¤#,##0.00",
+                "showAs":"text",
+                "styleClass":"font-weight-bold"
+            },
+            "name":"datalabel_3",
+            "styleClass":"font-weight-bold",
+            "typeName":"bootstrapcomponents-datalabel",
+            "typeid":47,
+            "uuid":"ACC7C57B-D0B2-4746-B108-045668D49ED9"
+        },
+        {
+            "cssPosition":"270,10,-1,-1,100,30",
+            "json":{
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"30",
+                    "left":"-1",
+                    "right":"10",
+                    "top":"270",
+                    "width":"100"
+                },
+                "onActionMethodID":"B66CFE39-0DE9-476A-A0D4-B0AF28FC8AC1",
+                "text":"Add Item"
+            },
+            "name":"button_1_copy801",
+            "typeName":"bootstrapcomponents-button",
+            "typeid":47,
+            "uuid":"C3C856C9-6B11-43BD-96ED-25DBC1F7D877"
+        },
+        {
             "anchors":3,
-            "cssPosition":"92,-1,-1,calc(25% + 176px),179,30",
+            "cssPosition":"115,-1,-1,calc(25% + 10px),179,30",
             "json":{
                 "anchors":3,
                 "cssPosition":{
                     "bottom":"-1",
                     "height":"30",
-                    "left":"calc(25% + 176px)",
+                    "left":"calc(25% + 10px)",
                     "right":"-1",
-                    "top":"92",
+                    "top":"115",
                     "width":"179"
                 },
                 "dataProviderID":"customerid",
@@ -213,6 +518,7 @@
                     "x":319,
                     "y":135
                 },
+                "onDataChangeMethodID":"84BC9BBB-62C3-446B-904E-AC433130DC61",
                 "size":{
                     "height":30,
                     "width":179
@@ -281,15 +587,47 @@
         },
         {
             "anchors":3,
-            "cssPosition":"207,-1,-1,calc(25% + 176px),180,30",
+            "cssPosition":"210,-1,-1,calc(25% + 200px),178,20",
+            "json":{
+                "anchors":3,
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"20",
+                    "left":"calc(25% + 200px)",
+                    "right":"-1",
+                    "top":"210",
+                    "width":"178"
+                },
+                "location":{
+                    "x":319,
+                    "y":170
+                },
+                "size":{
+                    "height":20,
+                    "width":180
+                },
+                "styleClassExpression":null,
+                "text":"Ship Country",
+                "toolTipText":"Employeeid"
+            },
+            "location":"319,170",
+            "name":"label_588_copy317_copy406",
+            "size":"180,20",
+            "typeName":"bootstrapcomponents-label",
+            "typeid":47,
+            "uuid":"D038FD91-EB5F-431D-AF2E-514E3E9D94A6"
+        },
+        {
+            "anchors":3,
+            "cssPosition":"230,-1,-1,calc(25% + 10px),180,30",
             "json":{
                 "anchors":3,
                 "cssPosition":{
                     "bottom":"-1",
                     "height":"30",
-                    "left":"calc(25% + 176px)",
+                    "left":"calc(25% + 10px)",
                     "right":"-1",
-                    "top":"207",
+                    "top":"230",
                     "width":"180"
                 },
                 "dataProviderID":"orderdate",
@@ -314,15 +652,15 @@
         },
         {
             "anchors":3,
-            "cssPosition":"127,-1,-1,calc(25% + 176px),180,20",
+            "cssPosition":"150,-1,-1,calc(25% + 10px),180,20",
             "json":{
                 "anchors":3,
                 "cssPosition":{
                     "bottom":"-1",
                     "height":"20",
-                    "left":"calc(25% + 176px)",
+                    "left":"calc(25% + 10px)",
                     "right":"-1",
-                    "top":"127",
+                    "top":"150",
                     "width":"180"
                 },
                 "location":{

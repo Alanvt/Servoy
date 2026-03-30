@@ -1,0 +1,18 @@
+{
+    "addEmptyValue":1,
+    "customProperties":{
+        "lazyLoading":false
+    },
+    "dataProviderID1":"firstname",
+    "dataProviderID2":"lastname",
+    "dataProviderID3":"employeeid",
+    "dataSource":"db:/example_data/employees",
+    "displayValueType":12,
+    "name":"employees",
+    "realValueType":4,
+    "returnDataProviders":4,
+    "showDataProviders":3,
+    "typeid":34,
+    "uuid":"12062E28-3DEF-4A47-965C-71C7DF53B584",
+    "valueListType":1
+}

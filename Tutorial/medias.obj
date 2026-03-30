@@ -1,0 +1,37 @@
+[
+{
+    "encapsulation":0,
+    "mimeType":"text/css",
+    "name":"manifest.json",
+    "typeid":37,
+    "uuid":"5E421B6F-3AC9-468F-B33C-D4BD8CA6DCD7"
+},
+{
+    "encapsulation":0,
+    "mimeType":"text/css",
+    "name":"solution_properties.less",
+    "typeid":37,
+    "uuid":"AEEAB91A-804C-484F-BB08-C503AA561630"
+},
+{
+    "encapsulation":0,
+    "mimeType":"text/css",
+    "name":"Tutorial.less",
+    "typeid":37,
+    "uuid":"1CB26B15-098B-4D7E-ACD4-83C1FAE1C8B9"
+},
+{
+    "encapsulation":0,
+    "mimeType":"text/css",
+    "name":"variants.json",
+    "typeid":37,
+    "uuid":"5E2052A4-6C55-4EB8-A1BD-1458A83ED331"
+},
+{
+    "encapsulation":0,
+    "mimeType":"text/css",
+    "name":"webapp144.png",
+    "typeid":37,
+    "uuid":"4A9FC5B1-2DB8-4B1A-B083-66DA4C415F0E"
+}
+]
